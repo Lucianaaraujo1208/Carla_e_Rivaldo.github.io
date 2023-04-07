@@ -37,7 +37,13 @@
   background-size: cover;
   background-position: center;
   }
+  
   }
+  @media (max-width: 300px) {
+      header {
+        background-size: contain;
+      }
+    }
   
   @media (min-width: 301px) {
   body {
@@ -84,7 +90,7 @@
     h1 {
     text-align: center;
     color: #fff;
-    font-size: 26px;
+    font-size: 20px;
     margin-top: px;
     }
     
@@ -92,7 +98,7 @@
     text-align: center;
     color: #fff;
     font-size: 18px;
-    margin-top: 250px;
+    margin-top: 200px;
     }
     }
     
