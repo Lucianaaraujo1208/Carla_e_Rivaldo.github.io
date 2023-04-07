@@ -183,14 +183,5 @@
   }
 
 
-  footer {
-    background-image: url('f.png');
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    height: 200px;
-    color: #FFFFFF; /* branco */
-    padding: 20px;
-    text-align: center;
-  }
+  
 
