@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 300px) {
   body {
   background-color: #e6bdcb;
   color: #0D3B66;
@@ -32,14 +32,14 @@
   background-color: #FFB6C1;
   color: #0D3B66;
   padding: 10px;
-  height: 300px;
+  height: 400px;
   background-image: url('Memories together.png');
   background-size: cover;
   background-position: center;
   }
   }
   
-  @media (min-width: 601px) {
+  @media (min-width: 301px) {
   body {
   background-color: #F3E7EB;
   color: #0D3B66;
@@ -80,7 +80,7 @@
   }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 300px) {
     h1 {
     text-align: center;
     color: #fff;
@@ -92,11 +92,11 @@
     text-align: center;
     color: #fff;
     font-size: 18px;
-    margin-top: 230px;
+    margin-top: 250px;
     }
     }
     
-    @media (min-width: 601px) {
+    @media (min-width: 301px) {
     h1 {
     text-align: center;
     color: #fff;
@@ -113,7 +113,7 @@
     }
 
 
-  @media (max-width: 600px) {
+  @media (max-width: 300px) {
   .cta-button {
   display: block;
   width: 100%;
@@ -139,7 +139,7 @@
   }
   }
   
-  @media (min-width: 601px) {
+  @media (min-width: 301px) {
   .cta-button {
   display: inline-block;
   width: 200px;
@@ -169,7 +169,7 @@
 
 
 .about-us {
-    background-color: #fff; 
+    background-color: #F3E7EB; 
     color: #dd5a78; 
     padding: 20px;
   }
@@ -184,3 +184,5 @@
     padding: 20px;
     text-align: center;
   }
+
+
