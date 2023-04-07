@@ -9,7 +9,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    
+    <audio src="X2Download.app - Iguinho & Lulinha - Eu Te Amo Tanto (128 kbps).mp3" id="audioPlayer" autoplay controls></audio>
+      
+    <script>
+      // reproduzir automaticamente a música quando a página for carregada
+      window.addEventListener('DOMContentLoaded', function() {
+        var audioPlayer = document.getElementById('audioPlayer');
+        audioPlayer.autoplay = true;
+        audioPlayer.load();
+      });
+           
+      // Verificar se o navegador é o Microsoft Edge e reproduzir automaticamente a música
+      var isEdge = /Edge/.test(navigator.userAgent);
+      if (isEdge) {
+        var audioPlayer = document.getElementById('audioPlayer');
+        audioPlayer.addEventListener('canplay', function() {
+          audioPlayer.play();
+        });
+      }
+  
+      // Verificar se o navegador é o Chrome e reproduzir automaticamente a música
+      var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+      if (isChrome) {
+        var audioPlayer = document.getElementById('audioPlayer');
+        audioPlayer.addEventListener('canplay', function() {
+          audioPlayer.play();
+        });
+      }
+  
+      // Verificar se o navegador é o Safari e reproduzir automaticamente a música
+      var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+      if (isSafari) {
+        var audioPlayer = document.getElementById('audioPlayer');
+        audioPlayer.addEventListener('loadedmetadata', function() {
+          audioPlayer.play();
+        });
+      }
+  
+      // Verificar se o navegador é o Firefox e reproduzir automaticamente a música
+      var isFirefox = typeof InstallTrigger !== 'undefined';
+      if (isFirefox) {
+        var audioPlayer = document.getElementById('audioPlayer');
+        audioPlayer.addEventListener('canplaythrough', function() {
+          audioPlayer.play();
+        });
+      }
+    </script>  
    
 </head>
   <body>
@@ -107,53 +152,7 @@
       </footer>
 
       
-        <audio src="X2Download.app - Iguinho & Lulinha - Eu Te Amo Tanto (128 kbps).mp3" id="audioPlayer" autoplay controls></audio>
-      
-        <script>
-          // reproduzir automaticamente a música quando a página for carregada
-          window.addEventListener('DOMContentLoaded', function() {
-            var audioPlayer = document.getElementById('audioPlayer');
-            audioPlayer.autoplay = true;
-            audioPlayer.load();
-          });
-               
-          // Verificar se o navegador é o Microsoft Edge e reproduzir automaticamente a música
-          var isEdge = /Edge/.test(navigator.userAgent);
-          if (isEdge) {
-            var audioPlayer = document.getElementById('audioPlayer');
-            audioPlayer.addEventListener('canplay', function() {
-              audioPlayer.play();
-            });
-          }
-      
-          // Verificar se o navegador é o Chrome e reproduzir automaticamente a música
-          var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-          if (isChrome) {
-            var audioPlayer = document.getElementById('audioPlayer');
-            audioPlayer.addEventListener('canplay', function() {
-              audioPlayer.play();
-            });
-          }
-      
-          // Verificar se o navegador é o Safari e reproduzir automaticamente a música
-          var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-          if (isSafari) {
-            var audioPlayer = document.getElementById('audioPlayer');
-            audioPlayer.addEventListener('loadedmetadata', function() {
-              audioPlayer.play();
-            });
-          }
-      
-          // Verificar se o navegador é o Firefox e reproduzir automaticamente a música
-          var isFirefox = typeof InstallTrigger !== 'undefined';
-          if (isFirefox) {
-            var audioPlayer = document.getElementById('audioPlayer');
-            audioPlayer.addEventListener('canplaythrough', function() {
-              audioPlayer.play();
-            });
-          }
-        </script>
-      
+             
       
       
   </body>
