@@ -3,161 +3,154 @@ body {
     color: #0D3B66; /* azul escuro */
     font-family: Arial, sans-serif;
   }
-  
-  header {
+
+h1, h2, h3 {
+color: #FF69B4; /* rosa médio */
+}
+
+a {
+color: #0D3B66; /* azul escuro */
+text-decoration: none;
+}
+
+a:hover {
+color: #FF69B4; /* rosa médio */
+}
+
+ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+li {
+margin-bottom: 10px;
+}
+
+header {
     background-color: #FFB6C1; /* rosa claro */
     color: #0D3B66; /* azul escuro */
     padding: 20px;
-  }
-  
-  h1, h2, h3 {
-    color: #FF69B4; /* rosa médio */
-  }
-  
-  a {
-    color: #0D3B66; /* azul escuro */
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #FF69B4; /* rosa médio */
-  }
-  
-  .cta-button {
-    background-color: #FF69B4; /* rosa médio */
-    color: #FFFFFF; /* branco */
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
-  
-  .cta-button:hover {
-    background-color: #FFB6C1; /* rosa claro */
-  }
-  
-  .about-us {
-    background-color: #FFFFFF; /* branco */
-    color: #0D3B66; /* azul escuro */
-    padding: 20px;
-  }
-  
-  .services {
-    background-color: #F3E7EB; /* rosa claro */
-    color: #0D3B66; /* azul escuro */
-    padding: 20px;
-  }
-  
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  footer {
-    background-image: url('Memories together (5).png');
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    height: 200px;
-    color: #FFFFFF; /* branco */
-    padding: 20px;
-    text-align: center;
-  }
-
-  nav {
-    text-align: right;
-  }
-  
-  nav ul {
-    display: inline-block;
-    list-style: none;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-left: 20px;
-  }
-  
-  nav li:first-child {
-    margin-left: 0;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-
-  header {
     background-image: url('Memories together.png');
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 580px;
+  }
+
+nav {
+float: right;
+margin-top: 10px;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+nav li {
+display: inline-block;
+margin-left: 20px;
+}
+
+nav li:first-child {
+margin-left: 0;
+}
+
+nav a {
+color: #FFB6C1;
+text-decoration: none;
+}
+
+h1 {
+text-align: center;
+color: #fff;
+font-size: 46px;
+margin-top: 10px;
+}
+
+p {
+text-align: center;
+color: #fff;
+font-size: 24px;
+margin-top: 385px;
+}
+
+.cta-button {
+display: inline-block;
+width: 200px;
+height: 30px;
+line-height: 30px;
+text-align: center;
+color: #fff;
+background-color: #FF69B4;
+border-radius: 5px;
+font-size: 18px;
+text-decoration: none;
+transition: background-color 0.3s ease;
+margin-right: 70px;
+}
+
+.cta-button:hover {
+background-color: #f4368f;
+}
+
+.cta-button-container {
+text-align: center;
+margin-top: 20px;
+}
+
+
+
+.about-us {
+    background-color: #FFB6C1; /* branco */
+    color: #dd5a78; /* azul escuro */
+    padding: 20px;
+  }
+
+/* Seção "Serviços" /
+.services {
+background-color: #F3E7EB; / rosa claro /
+color: #0D3B66; / azul escuro */
+padding: 20px;
+}
+
+
+/* Default styles for the footer */
+.footer {
+    background-color: #FFB6C1; /* rosa claro */
+    color: #0D3B66; /* azul escuro */
+    padding: 20px;
+    background-image: url('Memories together.png');
+    background-size: cover;
+    background-position: center;
+    height: 580px;;
   }
   
-  nav {
-    float: right;
+  .footer img {
+    max-width: 100%;
   }
   
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  /* Styles for smaller screens */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 10px;
+    }
   }
-  
-  nav li {
-    display: inline-block;
-    margin-left: 20px;
-  }
-  
-  nav li:first-child {
-    margin-left: 0;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  h1 {
+@media screen and (max-width: 768px) {
+/* Estilos para telas menores que 768px de largura */
+header {
+height: 300px;
+}
+
+h1 {
     text-align: center;
     color: #fff;
     font-size: 46px;
-    margin-top: 10px;
-      }
-  
-  p {
-    text-align: center;
-    color: #fff;
-    font-size: 24px;
-    margin-top: 295px;
+    margin-top: 5px;
   }
-  
-  .cta-button {
-    display: inline-block;
-    margin: 2px auto 0;
-    width: 200px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    color: #fff;
-    background-color: #dd5a78;
-    border-radius: 5px;
-    font-size: 18px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-  margin-right: 50px;
-  }
-  
-  .cta-button-container {
-    text-align: center;
-    
- 
-  }
-  
-  .cta-button:hover {
-    background-color: #F44336;
-  }
-  
+
+p {
+font-size: 18px;
+margin-top: 150px;
+}
