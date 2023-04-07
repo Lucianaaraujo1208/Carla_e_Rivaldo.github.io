@@ -32,18 +32,11 @@
   background-color: #FFB6C1;
   color: #0D3B66;
   padding: 10px;
-  height: 400px;
-  background-image: url('Memories together.png');
-  background-size: cover;
-  background-position: center;
-
-  background-image: url('Memories together.png');
-  background-size: cover;
-  background-position: center;
   height: 250px;
-  color: #FFFFFF; /* branco */
-  padding: 20px;
-  text-align: center;
+  height: 200px;
+  background-image: url('Memories together.png');
+  background-size: cover;
+  background-position: center;
 
   }
   }
@@ -94,15 +87,15 @@
     h1 {
     text-align: center;
     color: #fff;
-    font-size: 18px;
+    font-size: 22px;
     margin-top: px;
     }
    
     p {
     text-align: center;
     color: #fff;
-    font-size: 12px;
-    margin-top: 150px;
+    font-size: 14px;
+    margin-top: 105px;
     }
     }
    
