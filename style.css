@@ -179,15 +179,23 @@
     padding: 20px;
   }
 
-<style>
+.foto {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
   .foto {
     max-width: 100%;
-    height: auto;
   }
-</style>
-<div class="item">
-  <img class="foto" src="pix.png" alt="Foto 1">
-</div>
+}
+
+@media only screen and (max-width: 300px) {
+  .foto {
+    max-width: 100%;
+  }
+}
+
 
   
 
