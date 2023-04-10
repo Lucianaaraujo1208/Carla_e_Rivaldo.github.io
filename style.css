@@ -173,15 +173,21 @@
 
 
 
-
-
-
 .about-us {
     background-color: #F3E7EB;
     color: #dd5a78;
     padding: 20px;
   }
 
+<style>
+  .foto {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+<div class="item">
+  <img class="foto" src="pix.png" alt="Foto 1">
+</div>
 
   
 
